@@ -5,13 +5,19 @@ f = open("file.txt")
 
 # "or"
 
-line1 = f.readline()
-print(line1, type(line1))
+# line1 = f.readline()
+# print(line1, type(line1))
 
-line2 = f.readline()
-print(line2, type(line2))
+# line2 = f.readline()
+# print(line2, type(line2))
+# f.close()
+
+# "or"
+
+line = f.readline()
+while(line != ""):
+    print(line)
+    line = f.readline()
+
 f.close()
-
-
- 
 
